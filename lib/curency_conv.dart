@@ -35,7 +35,7 @@ class _CurrencyConverterPage extends State<CurrencyConverterPage>{
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text('INR $result',
+            Text('INR ${result !=0 ? result.toStringAsFixed(3):result.toStringAsFixed(0)}',
            style: const TextStyle(
             fontSize: 55,
             fontWeight: FontWeight.bold,
